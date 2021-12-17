@@ -303,10 +303,6 @@ function nav_clicked(e, target, is_overlay = false) {
 		gsap.to(".line-2", 0.5, { rotate: "0", y: 0, backgroundColor: "blue" });
 	}
 
-	if (target == "#chapters" || target == "#gallery" || target == "#history") {
-		gsap.to(window, { duration: 0.2, scrollTo: { y: target } });
-		return;
-	}
 	offset =
 		(window.innerHeight - document.querySelector(target).offsetHeight) / 2;
 	gsap.to(window, { duration: 0.2, scrollTo: { y: target, offsetY: offset } });

@@ -279,6 +279,10 @@
 	}
 
 	/* ! HISTORY */
+	.history .nav-first > div i {
+		font-size: 4vw !important;
+	}
+
 	.history .reader > div h2 {
 		font-size: 6.5vw !important;
 	}
@@ -324,6 +328,14 @@
 	}
 
 	/* ! HISTORY */
+	.history .nav-first div {
+		width: 11% !important;
+	}
+
+	.history .nav-first > div i {
+		font-size: 5vw !important;
+	}
+
 	.history .page-number {
 		font-size: 5vw !important;
 	}
@@ -359,15 +371,13 @@
 		gap: 50px;
 	}
 
-	.overlay-left
-	{
+	.overlay-left {
 		width: 100% !important;
 		align-items: flex-end;
 		padding: 0 !important;
 		padding-right: 10vw !important;
 		font-size: 9vw !important;
 	}
-
 
 	/* ! STARTER */
 	.starter {
@@ -433,26 +443,52 @@
 	}
 
 	.left .events > div {
-		padding: 1.2vh 3vw 1vh 3vw;
+		padding: 3vh 5vw !important;
+		width: 100% !important;
 	}
 
 	.left .events > div header {
-		margin-bottom: 8px !important;
-		padding-bottom: 8px !important;
+		margin-bottom: 2vh !important;
+		padding-bottom: 2vh !important;
+	}
+
+	.left .events > div header h3 {
+		font-size: 5vw !important;
+	}
+
+	.left .events > div header div {
+		font-size: 4.8vw !important;
+	}
+
+	.left .events > div p {
+		font-size: 4vw !important;
 	}
 
 	/* ! CHAPTERS */
 	.chapters {
-		height: 150vw !important;
+		height: 200vw !important;
 	}
 
 	.chapters header {
-		height: 100px !important;
+		height: 150px !important;
+	}
+
+	.chapters header h2 {
+		font-size: 5vw !important;
+		width: 20ch;
 	}
 
 	.chapters .grid {
 		grid-template-columns: 1fr 1fr !important;
 		grid-template-rows: repeat(17, 1fr) !important;
+	}
+
+	.chapters .grid > div {
+		font-size: 2.3vw !important;
+	}
+
+	.chapters .grid > div h4 {
+		font-size: 2.3vw !important;
 	}
 
 	/* ! GALLERY */
@@ -466,38 +502,51 @@
 
 	/* ! ABOUT */
 	.about {
-		height: 15vh !important;
+		height: 50vh !important;
 		gap: 0 !important;
 	}
 
 	.about h2 {
 		font-family: integral;
-		font-size: 3vw;
-		margin-bottom: 0.5vh !important;
+		font-size: 5vh !important;
+		margin-bottom: 1vh !important;
 		margin-top: 0vh !important;
 	}
 
 	.about p {
 		font-family: Poppins;
 		text-align: justify;
-		width: 50% !important;
-		font-size: 0.9vw;
+		width: 40ch !important;
+		font-size: 3vw !important;
 	}
 
 	.about p:nth-child(2) {
-		margin-bottom: 0.5vh !important;
+		margin-bottom: 2vh !important;
 	}
 
 	/* ! LOGO */
 	.logo {
-		height: 18vh !important;
-		gap: 1.5vh !important;
+		flex-flow: column nowrap;
+		height: 100vh !important;
+		gap: 3vh !important;
+	}
+
+	.logo .gbi {
+		width: 20vh !important;
+	}
+
+	.logo .description {
+		font-size: 3vw !important;
+	}
+
+	.logo .description p {
+		margin-bottom: 5px;
 	}
 
 	/* ! ABOUT */
 	.statements {
 		flex-flow: column nowrap;
-		height: 18vh !important;
+		height: 50vh !important;
 		gap: 2vh !important;
 	}
 
@@ -512,8 +561,41 @@
 
 	.mission h2,
 	.vision h2 {
+		font-size: 5vh !important;
 		margin-bottom: 0.5vh !important;
 		margin-top: 0vh !important;
+	}
+
+	.mission p,
+	.vision p {
+		font-size: 3vw !important;
+		width: 38ch !important;
+	}
+
+	/* ! HISTORY */
+	.history .nav-first div {
+		width: 13% !important;
+	}
+
+	.history .nav-first > div i {
+		font-size: 6vw !important;
+	}
+
+	.history .reader > div h2 {
+		font-size: 5vh !important;
+		text-align: center;
+	}
+
+	.history .reader > div p {
+		width: 80% !important;
+		font-size: 4vw !important;
+	}
+
+	.history .page-number {
+		font-size: 8.5vw !important;
+	}
+	.nav-last span {
+		width: 80px !important;
 	}
 
 	/* ! FOOTER */
@@ -524,20 +606,21 @@
 		gap: 2vh;
 	}
 
-	footer .logos{
+	footer .logos {
 		justify-content: center !important;
 	}
 
 	footer .logos img:nth-child(1) {
-		width: 10% !important;
+		width: 20% !important;
 	}
 	footer .logos img:nth-child(2) {
-		width: 12% !important;
+		width: 22% !important;
 	}
 
 	footer .title {
 		transform: translateY(5px) !important;
 		align-items: center !important;
+		font-size: 2.5vw !important;
 	}
 }
 
