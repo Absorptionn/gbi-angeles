@@ -1,0 +1,17 @@
+<div class="chapters" id="chapters">
+    <header>
+        <h2>GBI angeles has a total of <span>522</span> members</h2>
+    </header>
+    <div class="grid">
+        {% for chapter in chapters %}
+        <div class="{{chapter.barangay}}">
+            <h4>{{chapter.barangay}}</h4>
+            <div class="description">
+                <p><span>{{chapter.officers}}</span> officers</p>
+                <span>|</span>
+                <p><span>{{chapter.members}}</span> members</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

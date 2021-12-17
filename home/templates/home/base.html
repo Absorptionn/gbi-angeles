@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>{{title}} | GBI</title>
+    {% else %}
+    <title>GBI</title>
+    {% endif %}
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheet/fonts.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheet/media.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheet/main.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="nav-overlay">
+        <div class="overlay-left">
+            <span class="nav-overlay-event">EVENTS</span>
+            <span class="nav-overlay-chapter">CHAPTERS</span>
+            <span class="nav-overlay-gallery">GALLERY</span>
+            <span class="nav-overlay-about">ABOUT</span>
+            <span class="nav-overlay-logo">LOGO</span>
+            <span class="nav-overlay-statement">STATEMENTS</span>
+            <span class="nav-overlay-history">HISTORY</span>
+        </div>
+    </div>
+    <nav>
+        <div class="nav-title">
+            <span>GBI</span>
+        </div>
+        <div class="outer inactive">
+            <span class="nav-chapter">Chapters</span>
+        </div>
+        <div class="outer inactive">
+            <span class="nav-gallery">Gallery</span>
+        </div>
+        <div class="outer inactive">
+            <span class="nav-about">About</span>
+        </div>
+        <div class="outer inactive">
+            <span class="nav-logo">Logo</span>
+        </div>
+        <div class="outer inactive">
+            <span class="nav-statement">Statements</span>
+        </div>
+        <div class="outer inactive">
+            <span class="nav-history">History</span>
+        </div>
+        <div class="burger">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+        </div>
+    </nav>
+    <main>
+        {% block index %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div class="logos">
+            <img src="{%static 'home/images/angeles_logo.png'%}" alt="angeles city logo">
+            <img src="{%static 'home/images/guardians_logo.png'%}" alt="GBI logo">
+        </div>
+        <div class="title">
+            <h2>Guardians Brotherhood Inc.</h2>
+            <h4>Angeles City</h4>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="{% static 'home/javascript/main.js' %}"></script>
+
+</html>

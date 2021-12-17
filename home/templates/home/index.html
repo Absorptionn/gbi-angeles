@@ -1,0 +1,33 @@
+{% extends "home\base.html" %}
+{% load static %}
+{% block index %}
+<div class="left">
+    <div class="starter">
+        <header>
+            <div>
+                <span>GUARDIANS</span>
+                <span>BROTHERHOOD</span>
+                <span>INC.</span>
+            </div>
+            <span>Angeles City</span>
+        </header>
+        <div class="logos">
+            <img src="{% static 'home/images/angeles_logo.png'%}" alt="angeles city logo">
+            <img src="{% static 'home/images/guardians_logo.png'%}" alt="angeles city logo">
+        </div>
+        <div class="stairs"></div>
+        <div class="smoking"></div>
+        <div class="pattern"></div>
+    </div>
+    {% include "home\events.html" %}
+    {% include "home\chapters.html"%}
+    {% include "home\gallery.html"%}
+    {% include "home\about.html"%}
+    {% include "home\logo.html"%}
+    {% include "home\statements.html"%}
+    {% include "home\history.html"%}
+</div>
+<div class="right">
+    {% include "home\events.html" %}
+</div>
+{% endblock %}

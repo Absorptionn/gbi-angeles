@@ -1,0 +1,14 @@
+<div class="events" id="events">
+    {% for event in events %}
+        <div>
+            <header>
+                <h3>{{event.title}}</h3>
+                <div>
+                    <span>{{event.date|date:'F d, Y'}}</span>
+                    <span>{{event.date|date:'G:i A'}}</span>
+                </div>
+            </header>
+            <p>{{event.description}}</p>
+        </div>
+    {% endfor %}
+</div>
