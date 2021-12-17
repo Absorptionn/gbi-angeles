@@ -502,13 +502,13 @@
 
 	/* ! ABOUT */
 	.about {
-		height: 50vh !important;
+		height: 100vw !important;
 		gap: 0 !important;
 	}
 
 	.about h2 {
 		font-family: integral;
-		font-size: 5vh !important;
+		font-size: 10vw !important;
 		margin-bottom: 1vh !important;
 		margin-top: 0vh !important;
 	}
@@ -527,12 +527,12 @@
 	/* ! LOGO */
 	.logo {
 		flex-flow: column nowrap;
-		height: 100vh !important;
-		gap: 3vh !important;
+		height: 170vw !important;
+		gap: 3.5vw !important;
 	}
 
 	.logo .gbi {
-		width: 20vh !important;
+		width: 40vw !important;
 	}
 
 	.logo .description {
@@ -546,7 +546,7 @@
 	/* ! ABOUT */
 	.statements {
 		flex-flow: column nowrap;
-		height: 50vh !important;
+		height: 100vw !important;
 		gap: 2vh !important;
 	}
 
@@ -561,7 +561,7 @@
 
 	.mission h2,
 	.vision h2 {
-		font-size: 5vh !important;
+		font-size: 10vw !important;
 		margin-bottom: 0.5vh !important;
 		margin-top: 0vh !important;
 	}
