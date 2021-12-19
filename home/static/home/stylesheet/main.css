@@ -91,15 +91,15 @@ body > nav .nav-title span {
 	-webkit-text-fill-color: transparent;
 }
 
-body > nav .burger{
+body > nav .burger {
 	display: none;
 }
 
-.nav-overlay{
+.nav-overlay {
 	display: none;
 }
 
-.nav-overlay.active{
+.nav-overlay.active {
 	display: flex;
 }
 
@@ -145,14 +145,14 @@ main {
 	border-bottom: 1px solid white;
 }
 
-.right .events > div header h3{
+.right .events > div header h3 {
 	font-family: integral;
 	font-size: 1vw;
-	margin-bottom: .8vh;
+	margin-bottom: 0.8vh;
 	text-align: center;
 }
 
-.right .events > div header div{
+.right .events > div header div {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -161,12 +161,12 @@ main {
 	width: 100%;
 	font-family: integral;
 	font-weight: 100;
-	font-size: .8vw;
+	font-size: 0.8vw;
 }
 
-.right .events > div p{
+.right .events > div p {
 	font-family: Poppins;
-	font-size: .8vw;
+	font-size: 0.8vw;
 	text-align: justify;
 	white-space: pre-wrap;
 }
@@ -182,7 +182,7 @@ main {
 	flex-flow: column nowrap;
 }
 
-.left .events{
+.left .events {
 	display: none;
 }
 
@@ -263,16 +263,16 @@ main {
 	gap: 1vw;
 }
 
-.starter .logos img{
+.starter .logos img {
 	z-index: 1;
 	object-fit: contain;
 	transform: translateY(-5vh);
 }
 
-.starter .logos img:nth-child(1){
+.starter .logos img:nth-child(1) {
 	width: 26%;
 }
-.starter .logos img:nth-child(2){
+.starter .logos img:nth-child(2) {
 	width: 30%;
 }
 
@@ -395,7 +395,7 @@ main {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden scroll;
-	background-color: #2D2400;
+	background-color: #2d2400;
 }
 
 .gallery div {
@@ -420,9 +420,9 @@ main {
 /* ! ABOUT */
 .about {
 	display: flex;
-	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	flex-flow: column nowrap;
 	height: 22vw;
 	width: 100%;
 	gap: 1vh;
@@ -447,12 +447,220 @@ main {
 	font-size: 0.9vw;
 }
 
-/* ! LOGO */
-.logo {
+/* ! SONG AND PRAYER */
+.songprayer {
+	background-color: #121212;
+	width: 100%;
+	height: 35vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #eee;
+	position: relative;
+	padding-bottom: 1vw;
+	z-index: 1;
+}
+
+.songprayer > div {
+	padding: 0 5vw;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.songprayer div div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	color: white;
+	gap: 0.5vw;
+}
+
+.songprayer div div h2 {
+	font-family: integral;
+	font-weight: bold;
+	font-size: 3vw;
+}
+
+.songprayer div div p {
+	font-family: Poppins;
+	font-size: 0.9vw;
+	white-space: pre-line;
+	text-align: left;
+}
+
+.songprayer::before,
+.songprayer::after {
+	content: "";
+	width: 20%;
+	height: 115%;
+	top: -2vw;
+	position: absolute;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.7;
+}
+
+.songprayer::before {
+	left: 18%;
+	background-image: url("../images/pattern_3.png");
+}
+.songprayer::after {
+	right: 18.5%;
+	background-image: url("../images/pattern_4.png");
+}
+
+/* ! PANATA HYMN */
+.panatahymn {
+	width: 100%;
+	height: 40vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 0;
+}
+
+.panatahymn > div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 5vw;
+}
+
+.panatahymn div div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	gap: 0.5vw;
+}
+
+.panatahymn div div p {
+	font-family: Poppins;
+	font-size: 0.9vw;
+	white-space: pre-line;
+	text-align: left;
+}
+
+.panatahymn .panata {
+	color: white;
+}
+.panatahymn .hymn {
+	color: black;
+}
+
+.panatahymn::before,
+.panatahymn::after {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	display: flex;
+	align-items: flex-end;
+	font-family: integral;
+	font-weight: bold;
+	font-size: 3vw;
+}
+
+.panatahymn::before {
+	content: "PANATA";
+	left: 0;
+	color: white;
+	background-image: url("../images/cigar.jpg");
+	background-position: left;
+	background-size: cover;
+	background-repeat: none;
+}
+.panatahymn::after {
+	content: "NATIONAL SOLIDARITY HYMN";
+	right: 0;
+	color: black;
+	background-color: white;
+}
+
+/* ! INVOCATION */
+.invocationmotto {
+	height: 35vw;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	position: relative;
+}
+
+.invocationmotto > div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.invocationmotto div div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	gap: 1vw;
+}
+
+.invocationmotto div div p {
+	font-family: Poppins;
+	font-size: 0.9vw;
+	white-space: pre-line;
+	text-align: left;
+}
+
+.invocationmotto .invocation {
+	color: white;
+}
+
+.invocationmotto::after,
+.invocationmotto::before {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	z-index: -1;
+	display: flex;
+	align-items: flex-end;
+	font-family: integral;
+	font-weight: bold;
+	font-size: 3vw;
+}
+
+.invocationmotto::before {
+	content: "Motto";
+	left: 0;
+	background-color: white;
+	color: black;
+}
+
+.invocationmotto::after {
+	content: "Invocation";
+	color: white;
+	right: 0;
+	background-image: url("../images/prayer.jpg");
+	background-position: left;
+	background-size: cover;
+	background-repeat: none;
+}
+
+/* ! LOGO */
+.logo {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: black;
 	padding: 0 8vw;
 	height: 30vw;
 	width: 100%;
@@ -473,6 +681,7 @@ main {
 
 .logo .description p {
 	margin-bottom: 5px;
+	color: white;
 }
 
 .logo .description span {
@@ -480,6 +689,64 @@ main {
 	background-image: linear-gradient(90deg, rgb(228, 37, 37), rgb(54, 60, 240));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+/* ! ACRONYM */
+.acronym{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: white;
+}
+
+.acronym > div{
+	width: 90%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 3vw;
+}
+
+.acronym .left{
+	background-color: white;
+	height: 100%;
+	width: 5%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(9, 1fr);
+	place-items: center;
+	padding: 3vw 0;
+	background-image: linear-gradient(180deg, rgb(228, 37, 37), rgb(54, 60, 240));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.acronym .right{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: repeat(9, 1fr);
+	place-items: center;
+	height: 25vw;
+	padding: 3vw 0;
+	color: black;
+	font-size: .8vw;
+}
+
+.acronym h2{
+	font-family: integral;
+	font-weight: bold;
+}
+
+.acronym h3{
+	font-family: integral;
+	font-weight: 100;
+}
+
+.acronym span{
+	font-family: Poppins;
 }
 
 /* ! STATEMENTS */
@@ -518,6 +785,92 @@ main {
 	font-size: 0.9vw;
 	text-align: justify;
 	font-family: Poppins;
+}
+
+/* ! DOCTRINES */
+.doctrines{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: rgb(0, 3, 85);
+}
+
+.doctrines .reader {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: scroll hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	z-index: 1;
+}
+
+.doctrines .reader::-webkit-scrollbar {
+	display: none;
+}
+
+.doctrines .reader > div {
+	flex: 0 0 auto;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	font-family: Poppins;
+	color: white;
+	font-size: 1.5vw;
+}
+
+.doctrines .reader > div h2 {
+	font-family: ocean;
+	font-weight: 100;
+	font-size: 5vw;
+	text-align: center;
+}
+
+/* ! LUMAD */
+.lumad{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+}
+
+.lumad .reader {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: scroll hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	z-index: 1;
+}
+
+.lumad .reader::-webkit-scrollbar {
+	display: none;
+}
+
+.lumad .reader > div {
+	flex: 0 0 auto;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	font-family: Poppins;
+	color: black;
+	font-size: 1.5vw;
+}
+
+.lumad .reader > div h2 {
+	font-family: ocean;
+	font-weight: 100;
+	font-size: 5vw;
+	text-align: center;
 }
 
 /* ! HISTORY */

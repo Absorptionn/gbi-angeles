@@ -22,8 +22,6 @@ let page_index = 0;
 let min_page = 1;
 let max_page = 89;
 
-max_page_number.innerHTML = max_page.toString();
-
 const history_one = document.querySelector(".nav-last .one");
 const history_two = document.querySelector(".nav-last .two");
 const history_three = document.querySelector(".nav-last .three");
@@ -37,7 +35,6 @@ const btn_overlay_logo = document.querySelector(".nav-overlay-logo");
 const btn_overlay_about = document.querySelector(".nav-overlay-about");
 const btn_overlay_statement = document.querySelector(".nav-overlay-statement");
 const btn_overlay_history = document.querySelector(".nav-overlay-history");
-const btn_overlay_form = document.querySelector(".nanav-overlay-form");
 
 // ! EVENT LISTENERS
 for (let outer of outers) {
@@ -65,6 +62,7 @@ for (let outer of outers) {
 
 document.onreadystatechange = function () {
 	if (document.readyState == "complete") {
+		max_page_number.innerHTML = max_page.toString();
 		populate_images();
 	}
 };
@@ -318,8 +316,13 @@ function nav_left_clicked(e) {
 		btn_right.classList.remove("inactive");
 		btn_right.classList.add("active");
 	}
-	const prev_page = [...document.querySelector(".reader").children][page_index];
-	gsap.to(".reader", { duration: 0.2, scrollTo: `.${prev_page.className}` });
+	const prev_page = [...document.querySelector(".history .reader").children][
+		page_index
+	];
+	gsap.to(".history .reader", {
+		duration: 0.2,
+		scrollTo: `.${prev_page.className}`,
+	});
 
 	update_page_number();
 	if (page_index == 0) {
@@ -345,8 +348,13 @@ function nav_right_clicked(e) {
 		btn_right.classList.remove("active");
 	}
 
-	const next_page = [...document.querySelector(".reader").children][page_index];
-	gsap.to(".reader", { duration: 0.2, scrollTo: `.${next_page.className}` });
+	const next_page = [...document.querySelector(".history .reader").children][
+		page_index
+	];
+	gsap.to(".history .reader", {
+		duration: 0.2,
+		scrollTo: `.${next_page.className}`,
+	});
 
 	let page_number = (page_index + 1).toString();
 	if (page_number.length < 2) {
