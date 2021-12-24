@@ -6,7 +6,6 @@ const btn_about = document.querySelector(".nav-about");
 const btn_form = document.querySelector(".nav-form");
 const outers = document.querySelectorAll(".outer");
 
-let load_images = true;
 let forms = [
 	"/static/home/images/forms/gis-officers.jpg",
 	"/static/home/images/forms/gis-p1.jpg",
@@ -153,14 +152,14 @@ btn_print_form.addEventListener("click", (e) => {
 	a.remove();
 });
 
-btn_overlay_forms.addEventListener('click', (e) => {
-	burger.click()
+btn_overlay_forms.addEventListener("click", (e) => {
+	burger.click();
 	document.querySelector("body").style.overflow = "hidden";
 	forms_overlay.classList.add("active");
 	btn_form.parentElement.classList.remove("inactive");
 	btn_form.parentElement.classList.add("active");
 	btn_form.parentElement.classList.add("scroll-active");
-})
+});
 
 btn_forms_footer.addEventListener("click", (e) => {
 	document.querySelector("body").style.overflow = "hidden";
@@ -660,34 +659,12 @@ function update_last_nav(target, children, color) {
 	}
 }
 
-function populate_images() {
-	const images = JSON.parse(document.getElementById("images").textContent);
-	if (load_images) {
-		load_images = false;
-		for (let image of images) {
-			let gallery_children =
-				document.querySelector(".gallery .display").children;
-			let col_1 = gallery_children[1];
-			let col_2 = gallery_children[2];
-
-			let img = document.createElement("img");
-			img.src = image;
-
-			if (col_1.offsetHeight <= col_2.offsetHeight) {
-				col_1.appendChild(img);
-			} else {
-				col_2.appendChild(img);
-			}
-		}
-	}
-}
-
 function burger_clicked(e) {
 	if (!nav_overlay.classList.contains("active")) {
 		gsap.to(".line-1", 0.5, { rotate: "45", y: 5, backgroundColor: "white" });
 		gsap.to(".line-2", 0.5, { rotate: "-45", y: -5, backgroundColor: "white" });
 		nav_overlay.classList.add("active");
-		btn_close_form.click()
+		btn_close_form.click();
 	} else {
 		gsap.to(".line-1", 0.5, { rotate: "0", y: 0, backgroundColor: "red" });
 		gsap.to(".line-2", 0.5, { rotate: "0", y: 0, backgroundColor: "blue" });
@@ -706,5 +683,3 @@ function stop_dragging(e) {
 	mouse_down = false;
 	event_slider.style.cursor = "grab";
 }
-
-populate_images();
