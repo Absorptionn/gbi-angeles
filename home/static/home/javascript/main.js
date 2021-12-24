@@ -45,6 +45,7 @@ const btn_print_form = document.querySelector(
 	".forms-overlay .forms-container .button-container .button"
 );
 const btn_forms_footer = document.querySelector("footer .title span");
+const btn_overlay_forms = document.querySelector(".nav-overlay-form");
 
 let event_slider = document.querySelector(".left .events");
 let mouse_down = false;
@@ -151,6 +152,15 @@ btn_print_form.addEventListener("click", (e) => {
 	a.click();
 	a.remove();
 });
+
+btn_overlay_forms.addEventListener('click', (e) => {
+	burger.click()
+	document.querySelector("body").style.overflow = "hidden";
+	forms_overlay.classList.add("active");
+	btn_form.parentElement.classList.remove("inactive");
+	btn_form.parentElement.classList.add("active");
+	btn_form.parentElement.classList.add("scroll-active");
+})
 
 btn_forms_footer.addEventListener("click", (e) => {
 	document.querySelector("body").style.overflow = "hidden";
@@ -449,16 +459,6 @@ gsap.to(window, {
 	},
 });
 
-gsap.to("#gallery", {
-	scrollTrigger: {
-		scroller: "#gallery",
-		trigger: "#gallery .display",
-		start: "top top",
-		end: "95% bottom",
-		onLeave: populate_images,
-	},
-});
-
 // ABOUT
 gsap.to(window, {
 	scrollTrigger: {
@@ -662,10 +662,9 @@ function update_last_nav(target, children, color) {
 
 function populate_images() {
 	const images = JSON.parse(document.getElementById("images").textContent);
-	let unloaded_images = images.slice(4);
 	if (load_images) {
 		load_images = false;
-		for (let image of unloaded_images) {
+		for (let image of images) {
 			let gallery_children =
 				document.querySelector(".gallery .display").children;
 			let col_1 = gallery_children[1];
@@ -688,6 +687,7 @@ function burger_clicked(e) {
 		gsap.to(".line-1", 0.5, { rotate: "45", y: 5, backgroundColor: "white" });
 		gsap.to(".line-2", 0.5, { rotate: "-45", y: -5, backgroundColor: "white" });
 		nav_overlay.classList.add("active");
+		btn_close_form.click()
 	} else {
 		gsap.to(".line-1", 0.5, { rotate: "0", y: 0, backgroundColor: "red" });
 		gsap.to(".line-2", 0.5, { rotate: "0", y: 0, backgroundColor: "blue" });
@@ -706,3 +706,5 @@ function stop_dragging(e) {
 	mouse_down = false;
 	event_slider.style.cursor = "grab";
 }
+
+populate_images();

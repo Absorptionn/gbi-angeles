@@ -490,6 +490,8 @@ main > .left .events {
 	font-family: integral;
 	font-weight: bold;
 	font-size: 3vw;
+	margin-bottom: 1vh;
+	margin-top: -2vh;
 }
 
 .songprayer div div p {
@@ -547,7 +549,6 @@ main > .left .events {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
-	gap: 0.5vw;
 }
 
 .panatahymn div div p {
@@ -595,12 +596,12 @@ main > .left .events {
 
 /* ! INVOCATION */
 .invocationmotto {
-	height: 35vw;
+	height: 40vw;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
+	z-index: 0;
 	position: relative;
 }
 
@@ -609,6 +610,7 @@ main > .left .events {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	padding: 0 5vw;
 }
 
 .invocationmotto div div {
@@ -617,7 +619,6 @@ main > .left .events {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
-	gap: 1vw;
 }
 
 .invocationmotto div div p {
@@ -664,6 +665,7 @@ main > .left .events {
 
 .invocationmotto .motto p {
 	width: 29ch;
+	transform: translateX(-10%);
 }
 
 /* ! LOGO */
@@ -719,7 +721,7 @@ main > .left .events {
 	justify-content: center;
 	align-items: center;
 	padding-left: 3vw;
-	font-size: .9vw;
+	font-size: 0.9vw;
 }
 
 .acronym .left {
@@ -759,6 +761,7 @@ main > .left .events {
 }
 
 .acronym span {
+	text-align: center;
 	font-family: Poppins;
 }
 
@@ -966,7 +969,7 @@ main > .left .events {
 
 .doctrines .page-number {
 	position: absolute;
-	z-index: 2;
+	z-index: 99;
 	bottom: 30px;
 	right: 30px;
 	color: white;
@@ -1123,7 +1126,7 @@ main > .left .events {
 
 .lumad .page-number {
 	position: absolute;
-	z-index: 2;
+	z-index: 99;
 	bottom: 30px;
 	right: 30px;
 	color: white;
@@ -1290,7 +1293,7 @@ main > .left .events {
 
 .history .page-number {
 	position: absolute;
-	z-index: 2;
+	z-index: 99;
 	bottom: 30px;
 	right: 30px;
 	color: white;
@@ -1414,12 +1417,10 @@ footer .title span {
 .forms-overlay .forms-container .button-container {
 	position: absolute;
 	width: 100%;
-	padding-top: 2.5vw;
 	height: 2vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1vw;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -1444,7 +1445,6 @@ footer .title span {
 	align-items: center;
 	font-family: Poppins;
 	color: white;
-	padding: 0.8vh 0.8vw;
 	cursor: pointer;
 	font-size: 0.9vw;
 	border-bottom: 1px solid white;
@@ -1489,8 +1489,8 @@ footer .title span {
 
 .forms-overlay .forms-container .button-container .button {
 	background-color: rgb(27, 27, 27);
+	border-bottom: 1px solid rgb(27, 27, 27);
 	width: 25%;
-	padding: 0.8vh 0.8vw !important;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -1531,7 +1531,7 @@ footer .title span {
 .magic {
 	display: flex;
 	background-color: white;
-	padding: 2vw;
+	padding: 2vw 2vw 1.5vw 2vw;
 	height: 15vw;
 }
 
@@ -1540,7 +1540,7 @@ footer .title span {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column nowrap;
-	font-size: .9vw;
+	font-size: 0.9vw;
 }
 
 .magic p {
@@ -1592,7 +1592,7 @@ footer .title span {
 	justify-content: center;
 	align-items: center;
 	height: 40vw;
-	padding-top: .6vw;
+	padding-top: 0.6vw;
 	color: white;
 }
 
@@ -1610,7 +1610,7 @@ footer .title span {
 	justify-content: space-between;
 	flex-flow: column nowrap;
 	gap: 1vw;
-	font-size: .9vw;
+	font-size: 0.9vw;
 }
 
 .tattoo .grid h2 {
@@ -1660,12 +1660,16 @@ footer .title span {
 	gap: 1.5vw;
 }
 
-.tattoo .mra div{
+.tattoo .mra div {
 	height: 100%;
 }
 
-.tattoo .mra img{
+.tattoo .mra img {
 	object-fit: contain;
 	width: 100%;
 	height: 70%;
+}
+
+.acronyms{
+	display: none;
 }
