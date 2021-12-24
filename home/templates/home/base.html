@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheet/media.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheet/main.css' %}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -27,14 +27,12 @@
             <span class="nav-overlay-chapter">CHAPTERS</span>
             <span class="nav-overlay-gallery">GALLERY</span>
             <span class="nav-overlay-about">ABOUT</span>
-            <span class="nav-overlay-logo">LOGO</span>
-            <span class="nav-overlay-statement">STATEMENTS</span>
-            <span class="nav-overlay-history">HISTORY</span>
+            <span class="nav-overlay-form">FORMS</span>
         </div>
     </div>
     <nav>
         <div class="nav-title">
-            <span>GBI</span>
+            <span><a href="{% url 'home' %}">GBI</a></span>
         </div>
         <div class="outer inactive">
             <span class="nav-chapter">Chapters</span>
@@ -46,19 +44,52 @@
             <span class="nav-about">About</span>
         </div>
         <div class="outer inactive">
-            <span class="nav-logo">Logo</span>
-        </div>
-        <div class="outer inactive">
-            <span class="nav-statement">Statements</span>
-        </div>
-        <div class="outer inactive">
-            <span class="nav-history">History</span>
+            <span class="nav-form">Forms</span>
         </div>
         <div class="burger">
             <span class="line-1"></span>
             <span class="line-2"></span>
         </div>
     </nav>
+    <div class="forms-overlay">
+        <div class="forms-container">
+            <div class="button-container">
+                <div class="dropdown">
+                    <div class="display">
+                        <p>GBI Officers</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="items">
+                        <p>GBI Officers</p>
+                        <p>General Information Sheet - Page 1</p>
+                        <p>General Information Sheet - Page 2</p>
+                        <p>General Information Sheet - Page 3</p>
+                        <p>General Information Sheet - Page 4</p>
+                        <p>General Information Sheet - Page 5</p>
+                        <p>General Information Sheet - Page 6</p>
+                        <p>Official Receipt</p>
+                        <p>Securities and Exchange Commission</p>
+                        <p>IPO Intellectual Property Office</p>
+                        <p>GBI Official Seal</p>
+                        <p>GBI 2019 New Amended By Laws</p>
+                        <p>Issuance of ID</p>
+                        <p>GBI Proper ID</p>
+                        <p>Panunumpa sa Katapatan</p>
+                        <p>Panunumpa sa Katungkulan</p>
+                        <p>GBI Investiture Response</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <span>Download</span>
+                    <i class="fas fa-download"></i>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="reader">
+                <img class="form" src="/static/home/images/forms/gis-officers.jpg">
+            </div>
+        </div>
+    </div>
     <main>
         {% block index %}
         {% endblock %}
@@ -71,6 +102,7 @@
         <div class="title">
             <h2>Guardians Brotherhood Inc.</h2>
             <h4>Angeles City</h4>
+            <span>Forms</span>
         </div>
     </footer>
 </body>

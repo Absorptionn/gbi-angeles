@@ -42,12 +42,6 @@
 		backdrop-filter: blur(6px);
 	}
 
-	@supports not (backdrop-filter: blur(6px)) {
-		.nav-overlay {
-			background-color: rgba(0, 0, 0, 0.712) !important;
-		}
-	}
-
 	.overlay-left {
 		padding-top: 7vh;
 		width: 100%;
@@ -201,13 +195,10 @@
 	}
 
 	/* ! ABOUT */
-	.about {
-		height: 25vw !important;
-	}
-	.about h2 {
+	.about > h2 {
 		font-size: 3.5vw !important;
 	}
-	.about p {
+	.about > p {
 		font-size: 1vw !important;
 	}
 
@@ -465,7 +456,6 @@
 
 	/* ! ABOUT */
 	.about {
-		height: 100vw !important;
 		gap: 0 !important;
 	}
 
@@ -506,7 +496,7 @@
 		margin-bottom: 5px;
 	}
 
-	/* ! ABOUT */
+	/* ! STATEMENTS */
 	.statements {
 		flex-flow: column nowrap;
 		height: 100vw !important;

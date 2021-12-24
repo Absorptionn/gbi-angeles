@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from .models import Chapter, Image, Event
-# Create your views here.
+import os
 
 
 def home(request):
+    images = os.listdir(os.path.join(os.path.dirname(
+        os.path.realpath(__file__)), r'.\static\home\images\gallery'))
+
     chapters = Chapter.objects.all()
     members_sum = sum(chapter.members for chapter in chapters)
 
@@ -16,7 +19,7 @@ def home(request):
     context = {
         'events': events,
         'images': [
-            object.image.url for object in Image.objects.all()
+            f'/static/home/images/gallery/{image}' for image in images
         ],
         'chapters':  sorted(chapters, key=lambda o: o.barangay),
         'members_sum': members_sum
