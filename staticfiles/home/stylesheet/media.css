@@ -1,0 +1,1425 @@
+@media screen and (min-width: 1441px) {
+	.chapters .grid > div:nth-child(31) {
+		grid-area: 7/2/8/-4;
+	}
+	.chapters .grid > div:nth-child(32) {
+		grid-area: 7/3/8/-3;
+	}
+	.chapters .grid > div:nth-child(33) {
+		grid-area: 7/4/8/-2;
+	}
+
+	.forms-overlay .forms-container{
+		width: 30% !important;
+	}
+
+	.forms-overlay .forms-container .button-container {
+		padding-top: 2.4vw !important;
+		gap: 2vw !important;
+	}
+	
+	.forms-overlay .forms-container .button-container > i {
+		font-size: 2vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown {
+		width: 10vw !important;
+	}
+	.forms-overlay .forms-container .button-container .button {
+		width: 9vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown .items {
+		font-size: 1.3vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .button,
+	.forms-overlay .forms-container .button-container .dropdown .display {
+		padding: 0.8vh 0.8vw !important;
+		font-size: 1vw !important;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.starter header div {
+		transform: translateX(8px);
+	}
+	.starter .smoking::after {
+		height: 70% !important;
+		background-position: top !important;
+	}
+
+	.forms-overlay .forms-container{
+		width: 38% !important;
+	}
+
+	.forms-overlay .forms-container .button-container {
+		padding-top: 3vw !important;
+		gap: 2vw !important;
+	}
+	
+	.forms-overlay .forms-container .button-container > i {
+		font-size: 2vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown {
+		width: 13vw !important;
+	}
+	.forms-overlay .forms-container .button-container .button {
+		width: 12vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown .items {
+		font-size: 1.3vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .button,
+	.forms-overlay .forms-container .button-container .dropdown .display {
+		padding: 0.8vh 0.8vw !important;
+		font-size: 1.3vw !important;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.nav-overlay {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	body {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	/* ! OVERLAY */
+	.forms-overlay .forms-container {
+		width: 50% !important;
+	}
+
+	.forms-overlay .forms-container .button-container {
+		padding-top: 4vw !important;
+		gap: 2vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .button,
+	.forms-overlay .forms-container .button-container .dropdown .display {
+		padding: 1vh 1.5vw !important;
+		font-size: 1.8vw !important;
+	}
+	.forms-overlay .forms-container .button-container > i {
+		font-size: 2vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown {
+		width: 20vw !important;
+	}
+	.forms-overlay .forms-container .button-container .button {
+		width: 19vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown .items {
+		font-size: 1.5vw !important;
+	}
+
+	.nav-overlay {
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100vw;
+		z-index: 9999;
+		background-color: rgba(0, 0, 0, 0.15);
+		backdrop-filter: blur(6px);
+	}
+
+	.overlay-left {
+		padding-top: 7vh;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-flow: column nowrap;
+		font-family: integral;
+		font-size: 5.5vw;
+		font-weight: bold;
+		color: white;
+		letter-spacing: 0.05em;
+		align-items: flex-start;
+		padding-left: 80px;
+		gap: 10px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.overlay-left span {
+		cursor: pointer;
+	}
+	.overlay-left span:nth-last-child(1) {
+		border-top: 1px solid white;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1.5px white;
+	}
+
+	.outer span {
+		display: none;
+	}
+
+	body > nav .nav-title span {
+		font-size: 5vw !important;
+		margin-left: 80px !important;
+	}
+
+	body > nav .burger {
+		display: flex !important;
+		justify-content: center;
+		align-items: flex-end;
+		flex-flow: column nowrap;
+		gap: 8px;
+		height: 100%;
+		width: 45px;
+		margin-right: 80px;
+		cursor: pointer;
+	}
+
+	body > nav .burger span {
+		height: 3px;
+		width: 100%;
+	}
+
+	body > nav .burger span:nth-child(1) {
+		background-color: red;
+	}
+	body > nav .burger span:nth-child(2) {
+		background-color: blue;
+	}
+
+	.right {
+		display: none;
+	}
+
+	/* ! STARTER */
+	.starter header {
+		font-size: 3.7vw !important;
+	}
+	.starter header div span:nth-child(1) {
+		font-size: 10vw !important;
+		transform: translateY(-13px) !important;
+	}
+
+	.left .events {
+		display: flex !important;
+		background-color: #282828 !important;
+		width: 100%;
+		overflow: scroll hidden;
+		padding: 4vh 5vw;
+		gap: 30px;
+	}
+
+	.left .events > div {
+		flex: 0 0 auto;
+		margin: auto 0;
+		width: 50%;
+		padding: 3vh 3vw 4vh 3vw;
+		color: white;
+		background-color: #121212;
+		box-shadow: 0 2px 2px rgb(29, 29, 29);
+		z-index: 1;
+	}
+
+	.left .events > div header {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid white;
+	}
+
+	.left .events > div header h3 {
+		font-family: integral;
+		font-size: 1.9vw;
+		margin-bottom: 0.8vh;
+		text-align: center;
+	}
+
+	.left .events > div header div {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		white-space: nowrap;
+		width: 100%;
+		font-family: integral;
+		font-weight: 100;
+		font-size: 1.7vw !important;
+	}
+
+	.left .events > div p {
+		font-family: Poppins;
+		text-align: justify;
+		font-size: 1.5vw !important;
+	}
+
+	/* ! CHAPTERS */
+	.chapters {
+		height: 110vw !important;
+	}
+	.chapters header h2 {
+		font-size: 3vw !important;
+	}
+	.chapters .grid {
+		grid-template-columns: repeat(3, 1fr) !important;
+		grid-template-rows: repeat(11, 1fr) !important;
+		padding: 1vh 8vw 1.5vh 8vw;
+	}
+	.chapters .grid > div {
+		font-size: 1vw !important;
+	}
+	.chapters .grid > div h4 {
+		font-size: 1.5vw !important;
+	}
+
+	/* ! GALLERY */
+	.gallery div .col {
+		width: 49% !important;
+	}
+
+	/* ! ABOUT */
+	.about > div:nth-child(1) {
+		height: 30vw !important;
+	}
+	.about > div:nth-child(1) h2 {
+		font-size: 4vw !important;
+	}
+	.about > div:nth-child(1) p {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! LUMAD */
+	.lumad h2 {
+		font-size: 7vw !important;
+	}
+	.lumad p {
+		font-size: 2vw !important;
+	}
+	.lumad .page-number {
+		font-size: 5vw !important;
+	}
+	.lumad .nav-first > div i {
+		font-size: 4vw !important;
+	}
+
+	/* ! SONG PRAYER */
+	.songprayer {
+		height: 50vw !important;
+	}
+	.songprayer h2 {
+		font-size: 4vw !important;
+	}
+	.songprayer p {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! PANATA HYMN */
+	.panatahymn {
+		height: 55vw !important;
+	}
+	.panatahymn::before,
+	.panatahymn::after {
+		font-size: 4vw !important;
+	}
+	.panatahymn p {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! INVOCATION MOTTO */
+	.invocationmotto {
+		height: 55vw !important;
+	}
+	.invocationmotto::before,
+	.invocationmotto::after {
+		font-size: 5vw !important;
+	}
+	.invocationmotto p {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! DOCTRINES */
+	.doctrines h2 {
+		font-size: 7vw !important;
+	}
+	.doctrines h3 {
+		width: 30ch !important;
+		font-size: 4vw !important;
+	}
+	.doctrines p {
+		font-size: 2vw !important;
+	}
+	.doctrines .page-number {
+		font-size: 5vw !important;
+	}
+	.doctrines .nav-first > div i {
+		font-size: 4vw !important;
+	}
+
+	/* ! LOGO */
+	.logo {
+		height: 50vw !important;
+		padding: 0 10vw !important;
+	}
+
+	.logo .gbi {
+		width: 28vw !important;
+	}
+
+	.logo .description {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! ACRONYM */
+	.acronym {
+		height: 35vw !important;
+	}
+
+	.acronym .left,
+	.acronym .right {
+		padding: 4vw 0 !important;
+	}
+
+	.acronym h2 {
+		font-size: 1.9vw !important;
+	}
+	.acronym h2:nth-child(4) {
+		margin: 0.9vw 0;
+	}
+	.acronym h3 {
+		font-size: 1.5vw !important;
+	}
+	.acronym span {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! TATTOO */
+	.tattoo {
+		height: 50vw !important;
+	}
+	.tattoo .grid h2 {
+		font-size: 1.9vw !important;
+	}
+	.tattoo .grid h3 {
+		font-size: 1.5vw !important;
+	}
+	.tattoo .grid p {
+		font-size: 1.3vw !important;
+	}
+	.tattoo .mra img {
+		height: 60% !important;
+	}
+
+	/* ! MAGIC */
+	.magic {
+		height: 25vw !important;
+		padding: 4.5vw 4vw 3vw 4vw !important;
+	}
+
+	.magic h2 {
+		font-size: 1.9vw !important;
+	}
+	.magic h3 {
+		font-size: 1.5vw !important;
+	}
+	.magic p {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! STATEMENTS */
+	.statements {
+		height: 28vw !important;
+		gap: 5vw !important;
+	}
+
+	.statements > div {
+		width: 35% !important;
+	}
+
+	.mission h2,
+	.vision h2 {
+		font-size: 4vw !important;
+	}
+
+	.mission p,
+	.vision p {
+		font-size: 1.3vw !important;
+	}
+
+	/* ! HISTORY */
+	.history .nav-first > div i {
+		font-size: 4vw !important;
+	}
+
+	.history .reader > div h2 {
+		font-size: 7vw !important;
+	}
+
+	.history .reader > div p {
+		font-size: 2vw !important;
+	}
+
+	.history .page-number {
+		font-size: 5vw !important;
+	}
+
+	.history .nav-first > div i {
+		font-size: 4vw !important;
+	}
+
+	/* ! FOOTER */
+	footer {
+		height: 30vw !important;
+	}
+
+	footer .logos img {
+		width: 25% !important;
+	}
+
+	footer .title {
+		font-size: 1.6vw !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body > nav .nav-title span {
+		font-size: 6vw !important;
+	}
+
+	/* ! OVERLAY */
+
+	.forms-overlay .forms-container {
+		width: 70% !important;
+		height: 80% !important;
+	}
+
+	.forms-overlay .forms-container .button-container {
+		padding-top: 5vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .button,
+	.forms-overlay .forms-container .button-container .dropdown .display {
+		font-size: 2.3vw !important;
+	}
+	.forms-overlay .forms-container .button-container > i {
+		font-size: 2.8vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown {
+		width: 30vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .dropdown .items {
+		font-size: 2.3vw !important;
+	}
+
+	.starter .smoking::after {
+		height: 55% !important;
+	}
+
+	/* ! STARTER */
+	.starter header div span:nth-child(1) {
+		font-size: 10vw !important;
+		transform: translateY(-8px) !important;
+	}
+
+	/* ! EVENTS */
+
+	.left .events > div {
+		width: 55%;
+	}
+
+	.left .events > div header h3 {
+		font-size: 2.5vw !important;
+	}
+
+	.left .events > div header div {
+		font-size: 2vw !important;
+	}
+
+	.left .events > div p {
+		font-size: 1.8vw !important;
+	}
+
+	/* ! CHAPTERS */
+	.chapters {
+		height: 120vw !important;
+	}
+
+	.chapters header h2 {
+		font-size: 3.3vw !important;
+	}
+	.chapters .grid > div {
+		font-size: 1.5vw !important;
+	}
+	.chapters .grid > div h4 {
+		font-size: 1.9vw !important;
+	}
+
+	/* ! ABOUT */
+	.about > div:nth-child(1) {
+		height: 50vw !important;
+	}
+	.about > div:nth-child(1) h2 {
+		font-size: 5vw !important;
+	}
+	.about > div:nth-child(1) p {
+		font-size: 1.7vw !important;
+	}
+
+	/* ! LUMAD */
+	.lumad h2 {
+		font-size: 8vw !important;
+	}
+	.lumad p {
+		font-size: 3vw !important;
+	}
+	.lumad .page-number {
+		font-size: 7vw !important;
+	}
+	.lumad .nav-first > div i {
+		font-size: 5vw !important;
+	}
+
+	/* ! SONG PRAYER */
+	.songprayer {
+		height: 95vw !important;
+	}
+	.songprayer > div {
+		width: 95% !important;
+		gap: 5vw !important;
+	}
+	.songprayer h2 {
+		font-size: 5vw !important;
+	}
+	.songprayer p {
+		font-size: 1.7vw !important;
+	}
+
+	/* ! PANATA HYMN */
+	.panatahymn {
+		height: 95vw !important;
+	}
+	.panatahymn::before,
+	.panatahymn::after {
+		font-size: 6vw !important;
+	}
+	.panatahymn p {
+		font-size: 1.7vw !important;
+	}
+
+	/* ! INVOCATION MOTTO */
+	.invocationmotto {
+		height: 95vw !important;
+	}
+	.invocationmotto::before,
+	.invocationmotto::after {
+		font-size: 6vw !important;
+		background-position: 40% center !important;
+	}
+	.invocationmotto p {
+		font-size: 1.7vw !important;
+	}
+
+	/* ! DOCTRINES */
+	.doctrines h2 {
+		font-size: 8vw !important;
+	}
+	.doctrines h3 {
+		width: 20ch !important;
+		font-size: 6vw !important;
+	}
+	.doctrines p {
+		font-size: 3vw !important;
+	}
+	.doctrines .page-number {
+		font-size: 7vw !important;
+	}
+	.doctrines .nav-last span {
+		width: 45px !important;
+	}
+	.doctrines .nav-first > div i {
+		font-size: 5vw !important;
+	}
+
+	/* ! LOGO */
+	.logo {
+		flex-flow: column nowrap;
+		height: 95vw !important;
+		gap: 3.5vw !important;
+	}
+
+	.logo .gbi {
+		width: 35vw !important;
+	}
+
+	.logo .description {
+		font-size: 1.7vw !important;
+	}
+
+	.logo .description p {
+		margin-bottom: 5px;
+	}
+
+	/* ! ACRONYM */
+	.acronym {
+		height: 95vw !important;
+	}
+
+	.acronym .left,
+	.acronym .right {
+		padding: 4vw 0 !important;
+	}
+
+	.acronym h2 {
+		font-size: 5vw !important;
+	}
+	.acronym h2:nth-child(4) {
+		margin: 0;
+	}
+	.acronym h3 {
+		font-size: 2vw !important;
+	}
+	.acronym span {
+		font-size: 1.7vw !important;
+	}
+
+	/* ! TATTOO */
+	.tattoo {
+		height: 120vw !important;
+	}
+
+	.tattoo .grid {
+		row-gap: 15vw !important;
+		grid-template-columns: repeat(2, 1fr) !important;
+		grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+	}
+
+	.tattoo .grid .mrhc {
+		grid-area: 1/1/2/2 !important;
+	}
+	.tattoo .grid .pmc {
+		grid-area: 4/2/5/3 !important;
+	}
+	.tattoo .grid .mra {
+		grid-area: 2/1/5/2 !important;
+	}
+	.tattoo .grid .mrh {
+		height: 130%;
+		grid-area: 1/2/4/3 !important;
+	}
+	.tattoo .grid .pm {
+		text-align: center;
+		grid-area: 5/1/6/3 !important;
+	}
+	.tattoo .grid .mam {
+		grid-area: 6/1/-1/2 !important;
+	}
+	.tattoo .grid .mlh {
+		grid-area: 6/2/-1/-1 !important;
+	}
+
+	.tattoo .grid h2 {
+		font-size: 3vw !important;
+	}
+	.tattoo .grid h3 {
+		font-size: 2vw !important;
+	}
+	.tattoo .grid p {
+		font-size: 1.7vw !important;
+	}
+	.tattoo .mra img {
+		transform: translateY(20px);
+		height: 80% !important;
+	}
+
+	/* ! MAGIC */
+	.magic {
+		height: 70vw !important;
+		padding: 8vw 5vw 4vw 5vw !important;
+	}
+
+	.magic .left {
+		width: 11% !important;
+	}
+
+	.magic .middle {
+		width: 20% !important;
+	}
+
+	.magic .right {
+		padding-left: 2vw !important;
+	}
+	.magic h2 {
+		font-size: 5vw !important;
+	}
+	.magic h3 {
+		font-size: 2vw !important;
+	}
+	.magic .middle h3 {
+		padding-top: 2vw !important;
+	}
+	.magic p {
+		font-size: 1.7vw !important;
+	}
+
+	.magic .right p:nth-child(1) {
+		width: 25ch !important;
+	}
+	.magic .right p:nth-child(2) {
+		width: 25ch !important;
+	}
+
+	/* ! STATEMENTS */
+	.statements {
+		height: 50vw !important;
+		gap: 5vw !important;
+	}
+
+	.statements > div {
+		width: 35% !important;
+	}
+
+	.mission h2,
+	.vision h2 {
+		font-size: 7vw !important;
+	}
+
+	.mission p,
+	.vision p {
+		font-size: 1.7vw !important;
+	}
+
+	/* ! HISTORY */
+	.history .nav-first > div i {
+		font-size: 4vw !important;
+	}
+
+	.history .reader > div h2 {
+		font-size: 8vw !important;
+		text-align: center;
+	}
+
+	.history .reader > div p {
+		font-size: 3vw !important;
+	}
+
+	.history .page-number {
+		font-size: 7vw !important;
+	}
+	.history .nav-first > div i {
+		font-size: 5vw !important;
+	}
+
+	/* ! FOOTER */
+	footer {
+		height: 50vw !important;
+		justify-content: center !important;
+		flex-flow: column nowrap;
+		gap: 2vh;
+	}
+
+	footer .logos {
+		justify-content: center !important;
+	}
+
+	footer .logos img {
+		width: 18% !important;
+	}
+
+	footer .title {
+		transform: translateY(5px) !important;
+		align-items: center !important;
+		font-size: 3vw !important;
+	}
+
+	footer .title span {
+		font-size: 6vw !important;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	html,
+	body {
+		overflow: hidden scroll !important;
+	}
+	.left .events {
+		display: flex !important;
+		background-color: #eee;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body > nav .nav-title {
+		margin-left: -30px !important;
+	}
+
+	body > nav .nav-title span {
+		font-size: 10vw !important;
+	}
+
+	body > nav .burger {
+		margin-right: 45px !important;
+	}
+
+	/* ! OVERLAY */
+	.forms-overlay .forms-container {
+		width: 100% !important;
+	}
+
+	.forms-overlay .forms-container .button-container {
+		padding-top: 9vw !important;
+		gap: 3.5vw !important;
+	}
+
+	.forms-overlay .forms-container .button-container .button,
+	.forms-overlay .forms-container .button-container .dropdown .display {
+		padding: 1vh 2.5vw !important;
+		font-size: 3vw !important;
+	}
+	.forms-overlay .forms-container .button-container > i {
+		font-size: 4.5vw !important;
+	}
+	.forms-overlay .forms-container .button-container .dropdown {
+		width: 40vw !important;
+	}
+	.forms-overlay .forms-container .button-container .button {
+		width: 39vw !important;
+	}
+	.forms-overlay .forms-container .button-container .dropdown .items {
+		font-size: 2.8vw !important;
+		padding: 0 1.5vw;
+	}
+
+	.nav-overlay {
+		justify-content: center !important;
+		flex-flow: column nowrap;
+		gap: 50px;
+	}
+
+	.overlay-left {
+		width: 100% !important;
+		align-items: flex-end;
+		padding: 0 !important;
+		padding-right: 10vw !important;
+		font-size: 9vw !important;
+	}
+
+	/* ! STARTER */
+	.starter {
+		grid-template-rows: repeat(6, 1fr) !important;
+	}
+
+	.starter header {
+		grid-area: 3/1/5/3 !important;
+	}
+
+	.starter header div {
+		transform: translateX(-10px) !important;
+		text-align: left !important;
+		font-size: 3.5vh !important;
+	}
+
+	.starter header div span:nth-child(1) {
+		font-size: 6vh !important;
+		transform: translateY(-6px) !important;
+	}
+
+	.starter header > span {
+		font-size: 3vh;
+		transform: translate(-8px, 15px) !important;
+	}
+
+	.starter .logos {
+		grid-area: 5/1/6/3 !important;
+		gap: 10px !important;
+		justify-content: flex-start !important;
+	}
+
+	.starter .logos img {
+		transform: translate(-10px, -6vh) !important;
+	}
+
+	.starter .logos img:nth-child(1) {
+		width: 35% !important;
+	}
+	.starter .logos img:nth-child(2) {
+		width: 40% !important;
+	}
+
+	.starter .stairs::after {
+		background-position: 62% 60% !important;
+	}
+
+	.starter .smoking {
+		grid-area: 4/1/5/3 !important;
+	}
+
+	.starter .smoking::after {
+		top: 3vh !important;
+	}
+
+	.starter .pattern {
+		grid-area: 1/1/7/-3 !important;
+	}
+
+	/* ! EVENTS */
+	.left .events {
+		padding: 2vh 5vw !important;
+	}
+
+	.left .events > div {
+		padding: 3vh 5vw !important;
+		width: 100% !important;
+	}
+
+	.left .events > div header {
+		margin-bottom: 2vh !important;
+		padding-bottom: 2vh !important;
+	}
+
+	.left .events > div header h3 {
+		font-size: 5vw !important;
+	}
+
+	.left .events > div header div {
+		font-size: 4.8vw !important;
+	}
+
+	.left .events > div p {
+		font-size: 4vw !important;
+	}
+
+	/* ! CHAPTERS */
+	.chapters {
+		height: 200vw !important;
+	}
+
+	.chapters header {
+		height: 150px !important;
+	}
+
+	.chapters header h2 {
+		font-size: 5vw !important;
+		width: 20ch;
+	}
+
+	.chapters .grid {
+		grid-template-columns: 1fr 1fr !important;
+		grid-template-rows: repeat(17, 1fr) !important;
+	}
+
+	.chapters .grid > div {
+		font-size: 2.3vw !important;
+	}
+
+	.chapters .grid > div h4 {
+		font-size: 2.3vw !important;
+	}
+
+	/* ! GALLERY */
+	.gallery div {
+		flex-flow: column nowrap !important;
+	}
+
+	.gallery div .col {
+		width: 100% !important;
+	}
+
+	/* ! ABOUT */
+	.about > div:nth-child(1) {
+		height: 120vw !important;
+	}
+	.about > div:nth-child(1) h2 {
+		font-size: 10vw !important;
+	}
+	.about > div:nth-child(1) p {
+		font-size: 3vw !important;
+	}
+
+	/* ! LUMAD */
+	.lumad {
+		background-size: 200% !important;
+	}
+	.lumad h2 {
+		font-size: 11vw !important;
+	}
+	.lumad p {
+		font-size: 3.8vw !important;
+		width: 80% !important;
+		line-height: 3.5vh;
+	}
+	.lumad .page-number {
+		font-size: 10vw !important;
+	}
+	.lumad .nav-first > div {
+		width: 17% !important;
+	}
+	.lumad .nav-first > div i {
+		font-size: 9vw !important;
+	}
+
+	/* ! SONG PRAYER */
+	.songprayer {
+		height: 250vw !important;
+	}
+	.songprayer > div {
+		flex-flow: column nowrap !important;
+		width: 95% !important;
+		gap: 8vh !important;
+	}
+	.songprayer h2 {
+		font-size: 10vw !important;
+	}
+	.songprayer p {
+		font-size: 3vw !important;
+		width: 85%;
+		text-align: center !important;
+	}
+
+	.songprayer::before,
+	.songprayer::after {
+		height: 105% !important;
+		top: -6vw !important;
+	}
+
+	/* ! PANATA HYMN */
+	.panatahymn {
+		height: 260vw !important;
+	}
+	.panatahymn > div {
+		flex-flow: column nowrap !important;
+		gap: 65vw;
+	}
+	.panatahymn::before,
+	.panatahymn::after {
+		width: 100% !important;
+		height: 50% !important;
+		font-size: 9vw !important;
+		left: 0 !important;
+	}
+	.panatahymn::before {
+		top: 0 !important;
+	}
+	.panatahymn::after {
+		top: 50% !important;
+	}
+	.panatahymn p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 85%;
+		text-align: center !important;
+		font-size: 3vw !important;
+	}
+	.panatahymn > div p:nth-child(1) {
+		transform: translateY(-5vw);
+	}
+
+	/* ! INVOCATION MOTTO */
+	.invocationmotto {
+		height: 260vw !important;
+	}
+	.invocationmotto > div {
+		flex-flow: column-reverse nowrap !important;
+		gap: 60vw;
+	}
+	.invocationmotto::before,
+	.invocationmotto::after {
+		width: 100% !important;
+		height: 50% !important;
+		font-size: 9vw !important;
+		left: 0 !important;
+	}
+	.invocationmotto::before {
+		top: 50% !important;
+	}
+	.invocationmotto::after {
+		top: 0% !important;
+	}
+	.invocationmotto p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 85%;
+		font-size: 3vw !important;
+		text-align: center !important;
+	}
+	.invocationmotto > div p:nth-child(1) {
+		transform: translateY(-8vh);
+	}
+
+	/* ! DOCTRINES */
+	.doctrines {
+		background-size: 200% !important;
+	}
+	.doctrines h2 {
+		width: 80%;
+		font-size: 11vw !important;
+	}
+	.doctrines h3 {
+		width: 18ch !important;
+		font-size: 5vw !important;
+	}
+	.doctrines p {
+		width: 28ch !important;
+		font-size: 3.8vw !important;
+		line-height: 3.5vh;
+	}
+	.doctrines .page-number {
+		font-size: 10vw !important;
+	}
+	.doctrines .nav-last {
+		pointer-events: none;
+		z-index: 4 !important;
+	}
+	.doctrines .nav-last span {
+		pointer-events: all;
+	}
+	.doctrines .nav-last span {
+		width: 30px !important;
+	}
+	.doctrines .nav-first > div {
+		width: 17% !important;
+	}
+	.doctrines .nav-first > div i {
+		font-size: 9vw !important;
+	}
+
+	/* ! LOGO */
+	.logo {
+		flex-flow: column nowrap;
+		height: 230vw !important;
+		gap: 3vh !important;
+	}
+
+	.logo .gbi {
+		width: 25vh !important;
+	}
+
+	.logo .description {
+		font-size: 3.5vw !important;
+		width: 95%;
+		text-align: justify;
+	}
+
+	.logo .description p {
+		margin-bottom: 5px;
+	}
+
+	/* ! ACRONYMS */
+	.magic,
+	.acronym {
+		display: none !important;
+	}
+
+	.acronyms {
+		background-color: white;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		height: 120vw;
+		padding-left: 1.3vw;
+		gap: 5vw;
+	}
+
+	.acronyms > div {
+		transform: translateX(-2.5vh);
+		width: 40%;
+		height: 80%;
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-flow: row nowrap;
+		gap: 12vw;
+	}
+
+	.acronyms > div div {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: space-between;
+		font-family: integral;
+		font-size: 3.5vw;
+	}
+
+	.acronyms > div .left {
+		font-size: 4vw;
+		margin: -1vw 0;
+		background-image: linear-gradient(
+			180deg,
+			rgb(228, 37, 37),
+			rgb(54, 60, 240)
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.acronyms > div div h3 {
+		font-weight: 100;
+	}
+
+	/* ! TATTOO */
+	.tattoo {
+		height: 440vw !important;
+	}
+
+	.tattoo .grid {
+		transform: translateY(-6vw);
+		height: 90% !important;
+		row-gap: 20vw !important;
+		grid-template-columns: 1fr !important;
+		grid-template-rows: repeat(12, minmax(0, 1fr)) !important;
+	}
+
+	.tattoo .grid .mrhc {
+		grid-area: 4/1/5/-1 !important;
+	}
+	.tattoo .grid .pmc {
+		grid-area: 5/1/6/-1 !important;
+	}
+	.tattoo .grid .mra {
+		grid-area: 1/1/4/-1 !important;
+	}
+	.tattoo .grid .mrh {
+		height: 110% !important;
+		grid-area: 6/1/9/-1 !important;
+	}
+	.tattoo .grid .pm {
+		text-align: left;
+		grid-area: 9/1/10/-1 !important;
+	}
+	.tattoo .grid .mam {
+		grid-area: 10/1/11/-1 !important;
+	}
+	.tattoo .grid .mlh {
+		transform: translateY(8vh);
+		grid-area: 11/1/12/-1 !important;
+	}
+	.tattoo .grid h2 {
+		font-size: 6vw !important;
+	}
+	.tattoo .grid h3 {
+		font-size: 5vw !important;
+	}
+	.tattoo .grid p {
+		display: flex;
+		align-items: center;
+		transform: translateY(0.4vh);
+		font-size: 3vw !important;
+	}
+	.tattoo .mra img {
+		transform: translateY(20px);
+	}
+
+	/* ! STATEMENTS */
+	.statements {
+		flex-flow: column nowrap;
+		height: 130vw !important;
+		gap: 5vh !important;
+	}
+
+	.statements > div {
+		width: 80% !important;
+	}
+
+	.mission h2,
+	.vision h2 {
+		font-size: 10vw !important;
+	}
+
+	.mission p,
+	.vision p {
+		font-size: 3.5vw !important;
+	}
+
+	/* ! HISTORY */
+	.history {
+		background-size: 200% !important;
+	}
+	.history .reader > div h2 {
+		font-size: 11vw !important;
+		text-align: center;
+	}
+	.history .reader > div p {
+		width: 80% !important;
+		font-size: 3.8vw !important;
+		line-height: 3.5vh;
+	}
+	.history .page-number {
+		font-size: 10vw !important;
+	}
+	.history .nav-last {
+		pointer-events: none;
+		z-index: 4 !important;
+	}
+	.history .nav-last span {
+		pointer-events: all;
+	}
+	.history .nav-first > div {
+		width: 17% !important;
+	}
+	.history .nav-first > div i {
+		font-size: 9vw !important;
+	}
+
+	/* ! FOOTER */
+	footer {
+		height: 100vw !important;
+		justify-content: center !important;
+		flex-flow: column nowrap;
+		gap: 2vh;
+	}
+
+	footer .logos {
+		justify-content: center !important;
+	}
+
+	footer .logos img {
+		width: 23% !important;
+	}
+
+	footer .title {
+		transform: translateY(5px) !important;
+		align-items: center !important;
+		font-size: 3vw !important;
+	}
+
+	footer .title span {
+		font-size: 6vw !important;
+	}
+}
+@media screen and (max-width: 400px) {
+	.forms-overlay .forms-container {
+		height: 70% !important;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-height: 700px) {
+	.overlay-left {
+		font-size: 7vh !important;
+	}
+
+	.starter header {
+		transform: translateY(10px) !important;
+	}
+
+	.starter .smoking::after {
+		top: 8vh !important;
+	}
+
+	.starter .logos img {
+		width: 20% !important;
+	}
+}

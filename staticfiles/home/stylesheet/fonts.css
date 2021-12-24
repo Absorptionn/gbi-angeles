@@ -1,0 +1,21 @@
+@font-face {
+    font-family: boldline;
+    src: url("../fonts/Boldine.otf") format("opentype");
+}
+@font-face {
+    font-family: integral;
+    font-weight: bold;
+    src: url("../fonts/Integral.otf") format("opentype");
+}
+@font-face {
+    font-family: integral;
+    src: url("../fonts/Integral-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: ape;
+    src: url("../fonts/Ape.otf") format("opentype");
+}
+@font-face {
+    font-family: ocean;
+    src: url("../fonts/Ocean.otf") format("opentype");
+}

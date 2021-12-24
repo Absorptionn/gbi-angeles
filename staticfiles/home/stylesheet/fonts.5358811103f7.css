@@ -1,0 +1,21 @@
+@font-face {
+    font-family: boldline;
+    src: url("../fonts/Boldine.84ac03e08d4d.otf") format("opentype");
+}
+@font-face {
+    font-family: integral;
+    font-weight: bold;
+    src: url("../fonts/Integral.fca8c725e645.otf") format("opentype");
+}
+@font-face {
+    font-family: integral;
+    src: url("../fonts/Integral-Regular.7342f382e603.otf") format("opentype");
+}
+@font-face {
+    font-family: ape;
+    src: url("../fonts/Ape.7ded8d199fe1.otf") format("opentype");
+}
+@font-face {
+    font-family: ocean;
+    src: url("../fonts/Ocean.e8283d77dd05.otf") format("opentype");
+}
