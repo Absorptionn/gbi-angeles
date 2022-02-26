@@ -10,8 +10,8 @@ def home(request):
     events = [event for event in Event.objects.all()]
     for event in events:
         temp_event_date = event.date
-        setattr(event, 'date', temp_event_date.strftime("%B %m, %Y"))
-        setattr(event, 'time', temp_event_date.strftime("%I:%M %p"))
+        setattr(event, 'date', temp_event_date.strftime(r"%B %d, %Y"))
+        setattr(event, 'time', temp_event_date.strftime(r"%I:%M %p"))
 
     context = {
         'events': events,
